@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <!-- Homepage - Highest Priority -->
+    <url>
+        <loc>https://www.faizanbc.com/</loc>
+        <lastmod>2024-10-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Services Page - High Priority (Main Business Focus) -->
+    <url>
+        <loc>https://www.faizanbc.com/services</loc>
+        <lastmod>2024-10-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Projects/Portfolio Page - High Priority (Showcases Work) -->
+    <url>
+        <loc>https://www.faizanbc.com/projects</loc>
+        <lastmod>2024-10-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- About Us Page - Important for Trust & Authority -->
+    <url>
+        <loc>https://www.faizanbc.com/about</loc>
+        <lastmod>2024-10-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Contact Page - Essential for Lead Generation -->
+    <url>
+        <loc>https://www.faizanbc.com/contact</loc>
+        <lastmod>2024-10-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Reviews/Testimonials Page - Social Proof -->
+    <url>
+        <loc>https://www.faizanbc.com/reviews</loc>
+        <lastmod>2024-10-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Service-Specific Landing Pages (Future Expansion) -->
+    <!-- Uncomment when you create dedicated service pages -->
+    <!--
+    <url>
+        <loc>https://www.faizanbc.com/services/building-construction</loc>
+        <lastmod>2024-10-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.faizanbc.com/services/interior-fitout</loc>
+        <lastmod>2024-10-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.faizanbc.com/services/commercial-construction</loc>
+        <lastmod>2024-10-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.faizanbc.com/services/residential-construction</loc>
+        <lastmod>2024-10-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    -->
+
+    <!-- Location-Based Pages (Future SEO Strategy) -->
+    <!-- Uncomment when you create location-specific pages -->
+    <!--
+    <url>
+        <loc>https://www.faizanbc.com/ajman-construction</loc>
+        <lastmod>2024-10-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.faizanbc.com/ajman-construction</loc>
+        <lastmod>2024-10-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.faizanbc.com/sharjah-construction</loc>
+        <lastmod>2024-10-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    -->
+
+    <!-- Blog/News Section (Future Content Marketing) -->
+    <!-- Uncomment when you add blog functionality -->
+    <!--
+    <url>
+        <loc>https://www.faizanbc.com/blog</loc>
+        <lastmod>2024-10-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.faizanbc.com/news</loc>
+        <lastmod>2024-10-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    -->
+
+    <!-- Legal/Policy Pages (Good for Trust Signals) -->
+    <!-- Uncomment when you create these pages -->
+    <!--
+    <url>
+        <loc>https://www.faizanbc.com/privacy-policy</loc>
+        <lastmod>2024-10-17</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.faizanbc.com/terms-of-service</loc>
+        <lastmod>2024-10-17</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    -->
+
+</urlset>

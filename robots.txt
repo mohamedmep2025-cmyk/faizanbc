@@ -1,0 +1,49 @@
+# Robots.txt for Faizan Building Contracting LLC
+# This file tells search engine crawlers which pages they can access
+
+User-agent: *
+Allow: /
+
+# Allow all major search engines to crawl the site
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Disallow crawling of common admin/system files (if they exist)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /temp/
+Disallow: /tmp/
+
+# مثال: منع فهرسة صفحة portfolio (إذا أردت إخفاءها)
+# Disallow: /portfolio/
+
+# مثال: منع فهرسة مجلد الصور الخاصة
+# Disallow: /private-images/
+
+# مثال: منع فهرسة صفحات تحت الإنشاء
+# Disallow: /under-construction/
+
+# Allow crawling of images and assets (بدون $ للمرونة مع query parameters)
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.css
+Allow: /*.js
+
+# Sitemap location (تأكد من استخدام نطاقك الصحيح)
+Sitemap: https://www.faizanbc.com/sitemap.xml
+
+# Crawl delay (ملاحظة: جوجل يتجاهل هذا، لكن Bing يحترمه)
+Crawl-delay: 1

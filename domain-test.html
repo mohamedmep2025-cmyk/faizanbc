@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain Redirect Test - Faizan BC</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background: #f5f5f5; }
+        .container { max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .status { padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .warning { background: #fff3cd; color: #856404; border: 1px solid #ffeaa7; }
+        .info { background: #d1ecf1; color: #0c5460; border: 1px solid #bee5eb; }
+        .test-item { margin: 15px 0; padding: 10px; background: #f8f9fa; border-left: 4px solid #007bff; }
+        code { background: #e9ecef; padding: 2px 6px; border-radius: 3px; font-family: monospace; }
+        .back-section { margin-top: 30px; text-align: center; }
+        .back-button { background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+        .external-link { color: #007bff; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Domain Redirect Test Page</h1>
+        <p>This page helps you verify that your domain redirects are working correctly.</p>
+        
+        <div class="status info">
+            <strong>Current URL:</strong> <code id="current-url"></code>
+        </div>
+        
+        <div class="status info">
+            <strong>Canonical URL:</strong> <code id="canonical-url"></code>
+        </div>
+        
+        <h2>🔧 Automated Redirect Tests:</h2>
+        <div class="test-item">
+            <strong>Quick Test Tools:</strong><br>
+            <a href="https://httpstatus.io/" target="_blank" rel="noopener" class="external-link">🔗 HTTPStatus.io</a> - 
+            <a href="https://www.redirect-checker.org/" target="_blank" rel="noopener" class="external-link">🔗 Redirect Checker</a> - 
+            <a href="https://smallseotools.com/redirect-checker/" target="_blank" rel="noopener" class="external-link">🔗 SEO Redirect Tool</a>
+        </div>
+        
+        <h2>✅ Manual Tests to Perform:</h2>
+        
+        <div class="test-item">
+            <strong>1. Domain Canonicalization Tests:</strong><br>
+            <code>http://faizanbc.com</code> → <code>https://www.faizanbc.com/</code> (301)<br>
+            <code>https://faizanbc.com</code> → <code>https://www.faizanbc.com/</code> (301)<br>
+            <code>http://www.faizanbc.com</code> → <code>https://www.faizanbc.com/</code> (301)<br>
+            <code>https://www.faizanbc.com/</code> → Stay as is (200)
+        </div>
+        
+        <div class="test-item">
+            <strong>2. Section URL Tests:</strong><br>
+            <a href="/about" target="_blank">🔗 /about</a> - Should load homepage + scroll to About<br>
+            <a href="/services" target="_blank">🔗 /services</a> - Should load homepage + scroll to Services<br>
+            <a href="/projects" target="_blank">🔗 /projects</a> - Should load homepage + scroll to Projects<br>
+            <a href="/contact" target="_blank">🔗 /contact</a> - Should load homepage + scroll to Contact
+        </div>
+        
+        <div class="test-item">
+            <strong>3. Hash URL Redirect Tests:</strong><br>
+            <a href="/#about" target="_blank">🔗 /#about</a> - Should redirect to /about (301)<br>
+            <a href="/#services" target="_blank">🔗 /#services</a> - Should redirect to /services (301)<br>
+            <a href="/#projects" target="_blank">🔗 /#projects</a> - Should redirect to /projects (301)
+        </div>
+        
+        <div class="test-item">
+            <strong>4. SEO Files Test:</strong><br>
+            <a href="/sitemap.xml" target="_blank">🔗 /sitemap.xml</a> - Should load XML sitemap<br>
+            <a href="/robots.txt" target="_blank">🔗 /robots.txt</a> - Should load robots.txt file
+        </div>
+        
+        <h2>🎯 Expected Results:</h2>
+        <div class="status success">
+            <ul>
+                <li>All URLs should end up at <code>https://www.faizanbc.com/</code> (with www and https)</li>
+                <li>Section URLs should load the homepage but show the correct section</li>
+                <li>Canonical URL should match the current clean URL</li>
+                <li>No redirect loops or errors</li>
+            </ul>
+        </div>
+        
+        <h2>🚨 If You See Issues:</h2>
+        <div class="status warning">
+            <ul>
+                <li><strong>Multiple redirects:</strong> Check your _redirects file order</li>
+                <li><strong>Wrong canonical URL:</strong> Check JavaScript canonical update function</li>
+                <li><strong>404 errors:</strong> Ensure _redirects file is uploaded to Netlify</li>
+                <li><strong>No HTTPS:</strong> Check Netlify SSL settings</li>
+            </ul>
+        </div>
+        
+        <div class="back-section">
+            <a href="/" class="back-button">← Back to Homepage</a>
+        </div>
+    </div>
+    
+    <script>
+        // Display current URL info
+        document.getElementById('current-url').textContent = window.location.href;
+        
+        // Display canonical URL if exists
+        const canonical = document.querySelector('link[rel="canonical"]');
+        document.getElementById('canonical-url').textContent = canonical ? canonical.href : 'Not found';
+        
+        // Auto-test redirect status
+        if (window.location.protocol !== 'https:') {
+            document.body.insertAdjacentHTML('afterbegin', 
+                '<div class="status warning"><strong>⚠️ Warning:</strong> You are not using HTTPS! This should redirect automatically.</div>'
+            );
+        }
+        
+        if (!window.location.hostname.startsWith('www.')) {
+            document.body.insertAdjacentHTML('afterbegin', 
+                '<div class="status warning"><strong>⚠️ Warning:</strong> You are not using WWW! This should redirect automatically.</div>'
+            );
+        }
+        
+        if (window.location.protocol === 'https:' && window.location.hostname.startsWith('www.')) {
+            document.body.insertAdjacentHTML('afterbegin', 
+                '<div class="status success"><strong>✅ Success:</strong> You are using the correct canonical domain (HTTPS + WWW)!</div>'
+            );
+        }
+    </script>
+</body>
+</html>

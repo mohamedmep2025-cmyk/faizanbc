@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="Faizan Building Contracting LLC | Construction Experts UAE" data-ar="فيضان للمقاولات الإنشائية | خبراء البناء في الإمارات">Faizan Building Contracting LLC | Construction Experts UAE</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Leading construction and interior fit-out experts in Ajman and UAE. Faizan Building Contracting LLC specializes in residential, commercial, and industrial projects with quality craftsmanship since 2005.">
+    <meta name="keywords" content="construction UAE, building contractors Ajman, interior fit-out, residential construction, commercial construction, industrial construction, Ajman contractors, UAE building company, Faizan Building Contracting">
+    <meta name="author" content="Faizan Building Contracting LLC">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="geo.region" content="AE">
+    <meta name="geo.placename" content="Ajman, UAE">
+    
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Faizan Building Contracting LLC | Construction Experts UAE">
+    <meta property="og:description" content="Leading construction and interior fit-out experts in Ajman and UAE. Quality craftsmanship since 2005.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.faizanbc.com">
+    <meta property="og:image" content="https://www.faizanbc.com/logo.png">
+    <meta property="og:site_name" content="Faizan Building Contracting LLC">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Faizan Building Contracting LLC | Construction Experts UAE">
+    <meta name="twitter:description" content="Leading construction and interior fit-out experts in Ajman and UAE. Quality craftsmanship since 2005.">
+    <meta name="twitter:image" content="https://www.faizanbc.com/logo.png">
+    
+    <!-- Canonical URL - Will be updated dynamically by JavaScript -->
+    <link rel="canonical" href="https://www.faizanbc.com/" id="canonical-url">
+    
+    <!-- Structured Data for Local Business -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Faizan Building Contracting LLC",
+        "description": "Leading construction and interior fit-out experts in Ajman and UAE",
+        "url": "https://www.faizanbc.com",
+        "telephone": "+97137620403",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Ajman Free Zone",
+            "addressLocality": "Ajman",
+            "addressCountry": "AE"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "25.40576398379468",
+            "longitude": "55.45427131501173"
+        },
+        "openingHours": "Mo-Sa 08:00-18:00",
+        "sameAs": [
+            "https://www.linkedin.com/company/faizan-building-contracting",
+            "https://www.instagram.com/faizanbuilding",
+            "https://www.facebook.com/faizanbuilding"
+        ],
+        "serviceArea": {
+            "@type": "Place",
+            "name": "United Arab Emirates"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Construction Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Building & Construction",
+                        "description": "General contracting for new buildings and major renovations"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Interior Fit-Out",
+                        "description": "Custom joinery, MEP works, and specialized finishes for offices and villas"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+    <!-- Load Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Favicon link using a placeholder image for a building/logo icon -->
+    <link rel="icon" type="image/png" href="https://placehold.co/32x32/1E3A8A/ffffff?text=F">
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom styles for font and layout */
+        :root {
+            --color-primary: #1E3A8A; /* Deep Navy Blue */
+            --color-accent: #3B82F6; /* Bright Blue */
+            --color-bg: #F9FAFB;
+            --color-text-dark: #1F2937;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-bg);
+            color: var(--color-text-dark);
+            scroll-behavior: smooth;
+        }
+
+        /* RTL adjustments for better layout consistency and navigation slide-out */
+        [dir="rtl"] .text-left-rtl { text-align: right !important; }
+        [dir="rtl"] .items-start-rtl { align-items: flex-end !important; }
+
+        /* Custom translation classes for LTR/RTL mobile menu slide effect */
+        .translate-x-full-rtl { transform: translateX(100%); }
+        .translate-x-0-rtl { transform: translateX(0); }
+        .translate-x-full-ltr { transform: translateX(100%); }
+        .translate-x-0-ltr { transform: translateX(0); }
+        
+        /* Modern Header Shadow for better elevation */
+        .modern-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Footer link hover effect */
+        .footer-link:hover {
+            color: #ffffff;
+            transform: translateX(3px);
+        }
+
+        /* Style for the 5-star rating icon group */
+        .star-rating {
+            color: #FBBF24; /* Amber-500 for gold stars */
+        }
+
+        /* Background image styles moved from inline */
+        .hero-background {
+            background-image: url('Home : Welcome Section.png');
+            background-position: center 30%;
+        }
+
+        /* Iframe styles moved from inline */
+        .map-iframe {
+            border: 0;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#F0F4FF',
+                            100: '#E0E7FF',
+                            500: '#3B82F6', // Accent Blue
+                            900: '#1E3A8A', // Deep Navy Blue
+                        },
+                        accent: '#3B82F6',
+                    },
+                }
+            }
+        }
+
+        // Global state and utility functions for language and direction
+        let currentLang = 'en'; // Default to English
+        const isRTL = () => currentLang === 'ar';
+
+        const updateDirection = () => {
+            const html = document.documentElement;
+            html.dir = isRTL() ? 'rtl' : 'ltr';
+            html.lang = currentLang;
+
+            // Update all elements with data-en/data-ar attributes
+            document.querySelectorAll('[data-en], [data-ar]').forEach(el => {
+                const text = el.getAttribute(`data-${currentLang}`);
+                if (text) {
+                    el.textContent = text;
+                }
+            });
+
+            // Re-render Lucide icons to apply RTL styling
+            lucide.createIcons();
+        };
+
+        const toggleLang = () => {
+            currentLang = isRTL() ? 'en' : 'ar';
+            updateDirection();
+        };
+
+        // Update canonical URL dynamically
+        const updateCanonicalURL = (path) => {
+            const canonicalLink = document.getElementById('canonical-url');
+            if (canonicalLink) {
+                const baseURL = 'https://www.faizanbc.com';
+                const canonicalURL = path === '/' ? baseURL + '/' : baseURL + path;
+                canonicalLink.href = canonicalURL;
+            }
+        };
+
+        // URL routing for SEO-friendly URLs
+        const handleRouting = () => {
+            const path = window.location.pathname;
+            const hash = window.location.hash;
+            
+            // Map URLs to sections
+            const urlToSection = {
+                '/': 'home',
+                '/about': 'about',
+                '/services': 'services', 
+                '/projects': 'projects',
+                '/reviews': 'reviews',
+                '/contact': 'contact'
+            };
+            
+            // Get target section
+            let targetSection = urlToSection[path] || 'home';
+            
+            // If there's a hash, use it (for backward compatibility)
+            if (hash && hash.startsWith('#')) {
+                targetSection = hash.substring(1);
+            }
+            
+            // Update canonical URL
+            updateCanonicalURL(path);
+            
+            // Scroll to section
+            const element = document.getElementById(targetSection);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+            
+            // Update URL without page reload (for clean URLs)
+            if (path !== '/' && !urlToSection[path]) {
+                history.replaceState(null, '', '/');
+                updateCanonicalURL('/');
+            }
+        };
+
+        // Handle navigation clicks
+        const setupNavigation = () => {
+            document.querySelectorAll('a[href^="#"]').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    
+                    if (targetElement) {
+                        // Update URL for SEO
+                        const newPath = targetId === 'home' ? '/' : `/${targetId}`;
+                        history.pushState(null, '', newPath);
+                        
+                        // Update canonical URL
+                        updateCanonicalURL(newPath);
+                        
+                        // Scroll to section
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Set initial direction based on default language (English in this case)
+            updateDirection();
+            
+            // Setup URL routing
+            handleRouting();
+            setupNavigation();
+            
+            // Handle browser back/forward buttons
+            window.addEventListener('popstate', handleRouting);
+
+            // Setup language toggle button listener
+            document.getElementById('lang-toggle-btn')?.addEventListener('click', toggleLang);
+
+            // Setup mobile menu toggle listener
+            const menuBtn = document.getElementById('menu-toggle-btn');
+            const menu = document.getElementById('mobile-menu');
+
+            if (menuBtn && menu) {
+                // Initialize menu for correct slide-out on load
+                menu.classList.add('translate-x-full-rtl', 'translate-x-full-ltr');
+                
+                menuBtn.addEventListener('click', () => {
+                    const isOpening = menu.classList.contains('hidden');
+                    menu.classList.toggle('hidden');
+
+                    if (isOpening) {
+                        // OPENING: Slide in (translate-x-0)
+                        menu.classList.add(isRTL() ? 'translate-x-0-rtl' : 'translate-x-0-ltr');
+                        menu.classList.remove(isRTL() ? 'translate-x-full-rtl' : 'translate-x-full-ltr');
+                        menuBtn.innerHTML = '<i data-lucide="x" class="w-6 h-6 text-gray-800"></i>'; // Changed icon color to be darker
+                        lucide.createIcons();
+                    } else {
+                        // CLOSING: Slide out (translate-x-full)
+                        menu.classList.remove(isRTL() ? 'translate-x-0-rtl' : 'translate-x-0-ltr');
+                        menu.classList.add(isRTL() ? 'translate-x-full-rtl' : 'translate-x-full-ltr');
+                        menuBtn.innerHTML = '<i data-lucide="menu" class="w-6 h-6 text-gray-800"></i>'; // Changed icon color to be darker
+                        lucide.createIcons();
+                    }
+                });
+
+                // Close menu when a link is clicked
+                menu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        // Slide out and hide immediately after
+                        menu.classList.remove(isRTL() ? 'translate-x-0-rtl' : 'translate-x-0-ltr');
+                        menu.classList.add(isRTL() ? 'translate-x-full-rtl' : 'translate-x-full-ltr');
+                         menuBtn.innerHTML = '<i data-lucide="menu" class="w-6 h-6 text-gray-800"></i>'; // Changed icon color to be darker
+                        // Use a small delay for visibility toggle to allow transition to start, though not guaranteed to complete.
+                        setTimeout(() => {
+                            menu.classList.add('hidden');
+                        }, 10); 
+                    });
+                });
+            }
+        });
+    </script>
+</head>
+<body class="antialiased">
+
+    <!-- Header / Navigation Bar -->
+    <header class="bg-white modern-shadow fixed top-0 left-0 w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- تم تعديل الارتفاع إلى h-24 لاستيعاب اللوجو الأكبر -->
+            <div class="flex justify-between items-center h-24">
+                <!-- Logo with increased size w-48 h-16 -->
+                <a href="#" class="flex items-center space-x-2 rtl:space-x-reverse group">
+                    <!-- ACTUAL LOGO IMAGE - تم تحديث الحجم ليكون أكبر (w-48 h-16) -->
+                    <img src="logo.png" alt="Faizan Logo" class="w-48 h-16 object-contain rounded-lg shadow-md transition-transform duration-300 group-hover:scale-105">
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-6 rtl:space-x-reverse">
+                    <a href="#home" class="text-gray-700 hover:text-primary-500 font-medium transition duration-150 relative group-hover:text-gray-900" data-en="Home" data-ar="الرئيسية">
+                        <span data-en="Home" data-ar="الرئيسية">Home</span>
+                        <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-primary-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#about" class="text-gray-700 hover:text-primary-500 font-medium transition duration-150 relative group-hover:text-gray-900" data-en="About Us" data-ar="من نحن">
+                        <span data-en="About Us" data-ar="من نحن">About Us</span>
+                        <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-primary-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#services" class="text-gray-700 hover:text-primary-500 font-medium transition duration-150 relative group-hover:text-gray-900" data-en="Services" data-ar="الخدمات">
+                        <span data-en="Services" data-ar="الخدمات">Services</span>
+                        <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-primary-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#projects" class="text-gray-700 hover:text-primary-500 font-medium transition duration-150 relative group-hover:text-gray-900" data-en="Projects" data-ar="المشاريع">
+                        <span data-en="Projects" data-ar="المشاريع">Projects</span>
+                        <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-primary-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <!-- Navigation Link for Reviews -->
+                    <a href="#reviews" class="text-gray-700 hover:text-primary-500 font-medium transition duration-150 relative group-hover:text-gray-900" data-en="Reviews" data-ar="التقييمات">
+                        <span data-en="Reviews" data-ar="التقييمات">Reviews</span>
+                        <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-primary-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </nav>
+
+                <!-- Language Toggle, Contact Button, and Mobile Menu Button -->
+                <div class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <!-- Contact Button (Updated style) -->
+                    <a href="#contact" class="hidden md:inline-flex items-center px-4 py-2 rounded-full bg-primary-500 text-white hover:bg-primary-900 transition duration-150 font-bold shadow-lg shadow-primary-500/50 hover:shadow-primary-900/50">
+                        <i data-lucide="send" class="w-4 h-4 mr-2 rtl:mr-0 rtl:ml-2"></i>
+                        <span data-en="Contact Us" data-ar="اتصل بنا">Contact Us</span>
+                    </a>
+
+                    <!-- Language Toggle Button (Updated for better visibility) -->
+                    <button id="lang-toggle-btn" class="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition duration-150" aria-label="Toggle Language">
+                        <i data-lucide="globe" class="w-6 h-6 text-gray-800"></i> <!-- Darker icon color -->
+                    </button>
+
+                    <!-- Mobile Menu Button (Updated for better visibility) -->
+                    <button id="menu-toggle-btn" class="md:hidden p-2 rounded-full hover:bg-gray-100 transition duration-150" aria-label="Toggle Mobile Menu">
+                        <i data-lucide="menu" class="w-6 h-6 text-gray-800"></i> <!-- Darker icon color -->
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden fixed inset-0 w-full max-w-sm ml-auto mr-auto bg-white/95 backdrop-blur-md z-40 p-6 shadow-xl transition-transform duration-300 transform">
+            <nav class="flex flex-col space-y-4 pt-16">
+                <!-- تمت إعادة ألوان النصوص والقوائم الداخلية -->
+                <a href="#home" class="text-2xl font-bold text-gray-800 hover:text-primary-500 p-2 rounded-lg hover:bg-primary-50" data-en="Home" data-ar="الرئيسية">الرئيسية</a>
+                <a href="#about" class="text-2xl font-bold text-gray-800 hover:text-primary-500 p-2 rounded-lg hover:bg-primary-50" data-en="About Us" data-ar="من نحن">من نحن</a>
+                <a href="#services" class="text-2xl font-bold text-gray-800 hover:text-primary-500 p-2 rounded-lg hover:bg-primary-50" data-en="Services" data-ar="الخدمات">الخدمات</a>
+                <a href="#projects" class="text-2xl font-bold text-gray-800 hover:text-primary-500 p-2 rounded-lg hover:bg-primary-50" data-en="Projects" data-ar="المشاريع">المشاريع</a>
+                <!-- Mobile Link for Reviews -->
+                <a href="#reviews" class="text-2xl font-bold text-gray-800 hover:text-primary-500 p-2 rounded-lg hover:bg-primary-50" data-en="Reviews" data-ar="التقييمات">التقييمات</a>
+                <a href="#contact" class="text-2xl font-bold text-primary-500 hover:text-gray-800 p-2 rounded-lg hover:bg-primary-50" data-en="Contact Us" data-ar="اتصل بنا">اتصل بنا</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero / Welcome Section -->
+        <!-- تم تعديل البادينغ العلوي إلى pt-24 ليناسب ارتفاع الهيدر الجديد h-24 -->
+        <section id="home" class="relative overflow-hidden pt-24 pb-16 bg-white">
+            <div class="absolute inset-0 z-0 bg-cover bg-center hero-background">
+                <!-- Overlay -->
+                <div class="absolute inset-0 bg-primary-900/75 backdrop-blur-sm"></div> <!-- Increased darkness for better text contrast -->
+            </div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-white text-center py-24 md:py-36">
+                <!-- UPDATED PRIMARY HEADLINE: Adjusted size for mobile and desktop -->
+                <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold mb-4 leading-tight" 
+                    data-en="Trusted Construction & Interior Fit-Out Experts in Ajman and Across the UAE" 
+                    data-ar="خبراء المقاولات والتجهيز الداخلي الموثوقون في عجمان وعبر الإمارات">
+                    Trusted Construction & Interior Fit-Out Experts in Ajman and Across the UAE
+                </h1>
+                <!-- UPDATED SUB-HEADLINE: Adjusted size for mobile and desktop -->
+                <p class="text-lg sm:text-xl md:text-2xl font-light mb-10 max-w-5xl mx-auto opacity-90" 
+                    data-en="At Faizan Building Contracting LLC, we specialize in commercial, residential, and industrial projects delivering precision, quality craftsmanship, and sustainable solutions tailored to your vision." 
+                    data-ar="في شركة فيضان للمقاولات الإنشائية ذ.م.م، نتخصص في المشاريع التجارية والسكنية والصناعية مقدمين دقة وجودة حرفية وحلولاً مستدامة مصممة خصيصاً لرؤيتك.">
+                    At Faizan Building Contracting LLC, we specialize in commercial, residential, and industrial projects — delivering precision, quality craftsmanship, and sustainable solutions tailored to your vision.
+                </p>
+                <a href="#contact" class="inline-flex items-center px-8 py-3 border border-transparent text-lg font-bold rounded-full shadow-xl text-primary-900 bg-white hover:bg-gray-100 transition duration-300 transform hover:scale-[1.03]">
+                    <span data-en="Start Your Project" data-ar="ابدأ مشروعك">Start Your Project</span>
+                    <i data-lucide="arrow-right" class="w-5 h-5 ml-2 rtl:ml-0 rtl:mr-2"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-16 md:py-24 bg-primary-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+                <!-- Image Column -->
+                <div class="order-2 md:order-1 relative rounded-xl overflow-hidden shadow-2xl">
+                    <!-- IMAGE PATH UPDATED -->
+                    <img class="w-full h-full object-cover min-h-[300px]" 
+                          src="About Us Section.png" 
+                          alt="Image of the Faizan team and office">
+                    <div class="absolute inset-0 bg-primary-900/10"></div>
+                </div>
+                <!-- Content Column -->
+                <div class="order-1 md:order-2 text-left-rtl">
+                    <!-- Improved tracking -->
+                    <span class="text-primary-500 uppercase tracking-[.25em] font-semibold text-sm" data-en="Who We Are" data-ar="من نحن">Who We Are</span>
+                    <!-- Improved size and leading -->
+                    <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold text-primary-900 mb-6 leading-tight">
+                        <span data-en="Excellence in Construction Since 2005" 
+                            data-ar="الامتياز في البناء منذ عام 2005">
+                            Excellence in Construction Since 2005
+                        </span>
+                    </h2>
+                    <p class="text-gray-600 mb-4 text-base sm:text-lg" 
+                        data-en="Faizan Building Contracting LLC is a leading name in the UAE construction sector, dedicated to delivering projects that exceed expectations in quality, safety, and timeline." 
+                        data-ar="شركة فيضان للمقاولات الإنشائية ذ.م.م هي اسم رائد في قطاع البناء في الإمارات، ملتزمة بتقديم مشاريع تتجاوز التوقعات من حيث الجودة والسلامة والالتزام بالجدول الزمني.">
+                        Faizan Building Contracting LLC is a leading name in the UAE construction sector, dedicated to delivering projects that exceed expectations in quality, safety, and timeline.
+                    </p>
+                    <p class="text-gray-600 mb-6 text-base sm:text-lg" 
+                        data-en="Our experienced team ensures seamless execution from concept to handover, specializing in residential, commercial, and industrial structures." 
+                        data-ar="يضمن فريقنا ذو الخبرة تنفيذاً سلساً من الفكرة إلى التسليم، متخصصون في الهياكل السكنية والتجارية والصناعية.">
+                        Our experienced team ensures seamless execution from concept to handover, specializing in residential, commercial, and industrial structures.
+                    </p>
+                    <a href="#projects" class="inline-flex items-center text-primary-500 font-bold hover:text-primary-900 transition duration-150">
+                        <span data-en="View Our History" data-ar="شاهد تاريخنا">View Our History</span>
+                        <i data-lucide="move-right" class="w-5 h-5 ml-2 rtl:ml-0 rtl:mr-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <!-- Improved tracking -->
+                <span class="text-primary-500 uppercase tracking-[.25em] font-semibold text-sm" data-en="Our Expertise" data-ar="مجالات خبرتنا">Our Expertise</span>
+                <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold text-primary-900 mb-12" 
+                    data-en="Comprehensive Construction & Interior Solutions" 
+                    data-ar="حلول بناء وتجهيز داخلي شاملة">
+                    Comprehensive Construction & Interior Solutions
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Service 1: Building & Construction -->
+                    <div class="p-6 bg-white rounded-xl shadow-lg border-t-4 border-primary-500 hover:shadow-2xl hover:translate-y-[-5px] transition duration-300">
+                        <!-- IMAGE PATH UPDATED -->
+                        <img class="w-full h-48 object-cover rounded-lg mb-4" 
+                              src="Service 1 – Building : Construction.png" 
+                              alt="Building and Construction">
+                        <h3 class="text-xl sm:text-2xl font-extrabold text-primary-900 mb-3" 
+                            data-en="Building & Construction" data-ar="البناء والإنشاءات">
+                            Building & Construction
+                        </h3>
+                        <p class="text-gray-600 text-base" 
+                            data-en="From foundation to final finishes, we manage all phases of general contracting for new buildings and major renovations, ensuring structural integrity and longevity." 
+                            data-ar="من الأساسات إلى التشطيبات النهائية، ندير جميع مراحل المقاولات العامة للمباني الجديدة والتجديدات الكبرى، مع ضمان السلامة الهيكلية وطول العمر.">
+                            From foundation to final finishes, we manage all phases of general contracting for new buildings and major renovations, ensuring structural integrity and longevity.
+                        </p>
+                    </div>
+
+                    <!-- Service 2: Interior Fit-Out -->
+                    <div class="p-6 bg-white rounded-xl shadow-lg border-t-4 border-primary-500 hover:shadow-2xl hover:translate-y-[-5px] transition duration-300">
+                        <!-- IMAGE PATH UPDATED -->
+                        <img class="w-full h-48 object-cover rounded-lg mb-4" 
+                              src="Service 2 – Interior Fit-Out.png" 
+                              alt="Interior Fit-Out">
+                        <h3 class="text-xl sm:text-2xl font-extrabold text-primary-900 mb-3" 
+                            data-en="Interior Fit-Out" data-ar="التجهيز الداخلي">
+                            Interior Fit-Out
+                        </h3>
+                        <p class="text-gray-600 text-base" 
+                            data-en="We transform spaces into functional and aesthetically pleasing environments, handling everything from custom joinery and MEP works to specialized finishes for offices and villas." 
+                            data-ar="نقوم بتحويل المساحات إلى بيئات وظيفية وجمالية، حيث نتولى كل شيء من الأعمال الخشبية المخصصة وأعمال التمديدات الميكانيكية والكهربائية والسباكة (MEP) إلى التشطيبات المتخصصة للمكاتب والفيلات.">
+                            We transform spaces into functional and aesthetically pleasing environments, handling everything from custom joinery and MEP works to specialized finishes for offices and villas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section id="projects" class="py-16 md:py-24 bg-primary-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <!-- Improved tracking -->
+                <span class="text-primary-500 uppercase tracking-[.25em] font-semibold text-sm" data-en="Our Portfolio" data-ar="أعمالنا">Our Portfolio</span>
+                <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold text-primary-900 mb-12" 
+                    data-en="Recent Featured Projects" 
+                    data-ar="أحدث المشاريع المميزة">
+                    Recent Featured Projects
+                </h2>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    
+                    <!-- Project 1: High-rise Residential -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-2xl hover:translate-y-[-5px] transition duration-300">
+                        <!-- IMAGE PATH UPDATED -->
+                        <img class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105" 
+                              src="featured_highrise_residential.png" 
+                              alt="High-rise Residential Building">
+                        <div class="p-4 text-left-rtl">
+                            <h3 class="text-lg sm:text-xl font-extrabold text-primary-900" 
+                                data-en="Residential Tower" data-ar="برج سكني شاهق">
+                                Residential Tower
+                            </h3>
+                            <p class="text-primary-500 text-sm font-medium" 
+                                data-en="Construction - Ajman, UAE" data-ar="إنشاءات - عجمان، الإمارات">
+                                Construction - Ajman, UAE
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Luxury Villa -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-2xl hover:translate-y-[-5px] transition duration-300">
+                        <!-- IMAGE PATH UPDATED -->
+                        <img class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105" 
+                              src="featured_luxury_villa.png" 
+                              alt="Luxury Villa">
+                        <div class="p-4 text-left-rtl">
+                            <h3 class="text-lg sm:text-xl font-extrabold text-primary-900" 
+                                data-en="Luxury Villa" data-ar="فيلا فاخرة">
+                                Luxury Villa
+                            </h3>
+                            <p class="text-primary-500 text-sm font-medium" 
+                                data-en="Fit-Out - Ajman, UAE" data-ar="تجهيز داخلي - عجمان، الإمارات">
+                                Fit-Out - Ajman, UAE
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Commercial Warehouse -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-2xl hover:translate-y-[-5px] transition duration-300">
+                        <!-- IMAGE PATH UPDATED -->
+                        <img class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105" 
+                              src="featured_commercial_warehouse.png" 
+                              alt="Commercial Warehouse">
+                        <div class="p-4 text-left-rtl">
+                            <h3 class="text-lg sm:text-xl font-extrabold text-primary-900" 
+                                data-en="Commercial Warehouse" data-ar="مستودع تجاري">
+                                Commercial Warehouse
+                            </h3>
+                            <p class="text-primary-500 text-sm font-medium" 
+                                data-en="Construction - Sharjah, UAE" data-ar="إنشاءات - الشارقة، الإمارات">
+                                Construction - Sharjah, UAE
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Office Fit-out -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-2xl hover:translate-y-[-5px] transition duration-300">
+                        <!-- IMAGE PATH UPDATED -->
+                        <img class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105" 
+                              src="featured_office_fitout.png" 
+                              alt="Office Fit-out">
+                        <div class="p-4 text-left-rtl">
+                            <h3 class="text-lg sm:text-xl font-extrabold text-primary-900" 
+                                data-en="Corporate Office" data-ar="مكتب شركة">
+                                Corporate Office
+                            </h3>
+                            <p class="text-primary-500 text-sm font-medium" 
+                                data-en="Fit-Out - Ajman, UAE" data-ar="تجهيز داخلي - عجمان، الإمارات">
+                                Fit-Out - Ajman, UAE
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12">
+                    <a href="#contact" class="inline-flex items-center px-6 py-3 border-2 border-primary-500 text-lg font-bold rounded-full text-primary-500 hover:bg-primary-500 hover:text-white transition duration-300 transform hover:scale-[1.03]">
+                        <span data-en="See All Projects" data-ar="مشاهدة جميع المشاريع">See All Projects</span>
+                        <i data-lucide="building-2" class="w-5 h-5 ml-2 rtl:ml-0 rtl:mr-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Google Reviews/Testimonials Section -->
+        <section id="reviews" class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <!-- Improved tracking -->
+                <span class="text-primary-500 uppercase tracking-[.25em] font-semibold text-sm" data-en="Customer Voices" data-ar="آراء العملاء">Customer Voices</span>
+                <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold text-primary-900 mb-6" 
+                    data-en="What Our Clients Say About Us" 
+                    data-ar="ماذا يقول عملاؤنا عنا">
+                    What Our Clients Say About Us
+                </h2>
+                
+                <!-- Overall Rating Badge (Google Placeholder) -->
+                <div class="flex justify-center items-center space-x-4 rtl:space-x-reverse mb-10">
+                    <div class="text-5xl font-extrabold text-primary-900">4.9</div>
+                    <div class="flex flex-col items-center rtl:items-end">
+                        <div class="flex space-x-1 rtl:space-x-reverse star-rating">
+                            <!-- 5 Stars Placeholder -->
+                            <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+                            <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+                            <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+                            <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+                            <i data-lucide="star-half" class="w-6 h-6 fill-current"></i>
+                        </div>
+                        <p class="text-gray-600 mt-1" data-en="Based on 150+ Google Reviews" data-ar="بناءً على 150+ تقييم على جوجل">
+                            Based on 150+ Google Reviews
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Testimonial Grid -->
+                <div class="grid md:grid-cols-3 gap-8 text-left-rtl">
+                    
+                    <!-- Review 1: Added subtle hover effect -->
+                    <div class="p-6 bg-primary-50 rounded-xl shadow-lg border-b-4 border-primary-500 flex flex-col justify-between hover:shadow-xl transition duration-300">
+                        <div class="flex space-x-1 rtl:space-x-reverse star-rating mb-3">
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        </div>
+                        <p class="text-gray-700 italic mb-4 text-base" 
+                            data-en="“Faizan delivered our commercial office fit-out project ahead of schedule and within budget. The quality of finishing is exceptional. Highly recommend their professional team.”" 
+                            data-ar="“أنجزت شركة فيضان مشروع التجهيز الداخلي لمكتبنا التجاري قبل الموعد المحدد وفي حدود الميزانية. جودة التشطيبات استثنائية. أوصي بشدة بفريقهم المحترف.”">
+                            “Faizan delivered our commercial office fit-out project ahead of schedule and within budget. The quality of finishing is exceptional. Highly recommend their professional team.”
+                        </p>
+                        <div class="font-extrabold text-primary-900 text-base">Mohammed Al Marzooqi</div> <!-- Changed to extrabold -->
+                        <div class="text-xs text-gray-500" data-en="Client, Ajman" data-ar="عميل، عجمان">Client, Ajman</div>
+                    </div>
+
+                    <!-- Review 2: Added subtle hover effect -->
+                    <div class="p-6 bg-primary-50 rounded-xl shadow-lg border-b-4 border-primary-500 flex flex-col justify-between hover:shadow-xl transition duration-300">
+                        <div class="flex space-x-1 rtl:space-x-reverse star-rating mb-3">
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        </div>
+                        <p class="text-gray-700 italic mb-4 text-base" 
+                            data-en="“They handled the entire construction of our new residential villa. The communication was excellent, and their commitment to safety standards was reassuring throughout the process.”" 
+                            data-ar="“لقد تولوا بناء فيلتنا السكنية الجديدة بالكامل. كان التواصل ممتازًا، والتزامهم بمعايير السلامة كان مطمئنًا طوال العملية.”">
+                            “They handled the entire construction of our new residential villa. The communication was excellent, and their commitment to safety standards was reassuring throughout the process.”
+                        </p>
+                        <div class="font-extrabold text-primary-900 text-base">Fatima Al Suwaidi</div> <!-- Changed to extrabold -->
+                        <div class="text-xs text-gray-500" data-en="Homeowner, Abu Dhabi" data-ar="مالكة منزل، أبوظبي">Homeowner, Abu Dhabi</div>
+                    </div>
+
+                    <!-- Review 3: Added subtle hover effect -->
+                    <div class="p-6 bg-primary-50 rounded-xl shadow-lg border-b-4 border-primary-500 flex flex-col justify-between hover:shadow-xl transition duration-300">
+                        <div class="flex space-x-1 rtl:space-x-reverse star-rating mb-3">
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star-half" class="w-5 h-5 fill-current"></i>
+                        </div>
+                        <p class="text-gray-700 italic mb-4 text-base" 
+                            data-en="“Very satisfied with the speed and professionalism of the team during the renovation of our retail space. A trustworthy contractor in the Sharjah area.”" 
+                            data-ar="“راضٍ جداً عن سرعة واحترافية الفريق أثناء تجديد مساحتنا التجارية. مقاول موثوق به في منطقة الشارقة.”">
+                            “Very satisfied with the speed and professionalism of the team during the renovation of our retail space. A trustworthy contractor in the Sharjah area.”
+                        </p>
+                        <div class="font-extrabold text-primary-900 text-base">Omar Hassan</div> <!-- Changed to extrabold -->
+                        <div class="text-xs text-gray-500" data-en="Business Owner, Sharjah" data-ar="صاحب عمل، الشارقة">Business Owner, Sharjah</div>
+                    </div>
+                </div>
+
+                <!-- Call to action/View more reviews link -->
+                <div class="mt-12">
+                    <a href="#" class="inline-flex items-center px-6 py-3 border-2 border-primary-500 text-lg font-bold rounded-full text-primary-500 hover:bg-primary-500 hover:text-white transition duration-300 transform hover:scale-[1.03]">
+                        <span data-en="Read All Google Reviews" data-ar="قراءة جميع تقييمات جوجل">Read All Google Reviews</span>
+                        <!-- Using an external link icon to suggest redirecting to Google -->
+                        <i data-lucide="external-link" class="w-5 h-5 ml-2 rtl:ml-0 rtl:mr-2"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 md:py-24 bg-primary-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <!-- Improved tracking -->
+                <span class="text-primary-500 uppercase tracking-[.25em] font-semibold text-sm" data-en="Get In Touch" data-ar="تواصل معنا">Get In Touch</span>
+                <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold text-primary-900 mb-12" 
+                    data-en="Ready to Start Your Next Project?" 
+                    data-ar="هل أنت مستعد لبدء مشروعك القادم؟">
+                    Ready to Start Your Next Project?
+                </h2>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <!-- Contact Card 1: Email -->
+                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-primary-500">
+                        <i data-lucide="mail" class="w-10 h-10 text-primary-500 mx-auto mb-4"></i>
+                        <h3 class="text-xl font-extrabold text-primary-900 mb-2" data-en="Email Us" data-ar="البريد الإلكتروني">Email Us</h3>
+                        <p class="text-gray-600 mb-2" data-en="Send us a detailed message." data-ar="أرسل لنا رسالة مفصلة.">Send us a detailed message.</p>
+                        <a href="mailto:info@faizanbc.com" class="text-primary-500 font-medium hover:underline text-sm sm:text-base">info@faizanbc.com</a>
+                    </div>
+
+                    <!-- Contact Card 2: Phone -->
+                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-primary-500">
+                        <i data-lucide="phone" class="w-10 h-10 text-primary-500 mx-auto mb-4"></i>
+                        <h3 class="text-xl font-extrabold text-primary-900 mb-2" data-en="Call Us" data-ar="اتصل بنا">Call Us</h3>
+                        <p class="text-gray-600 mb-2" data-en="Mon-Fri, 9am - 5pm" data-ar="من الإثنين إلى الجمعة، 9 صباحًا - 5 مساءً">Mon-Fri, 9am - 5pm</p>
+                        <a href="tel:+97137620403" class="text-primary-500 font-medium hover:underline text-sm sm:text-base">+971 3 762 0403</a>
+                    </div>
+
+                    <!-- Contact Card 3: Location -->
+                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-primary-500">
+                        <i data-lucide="map-pin" class="w-10 h-10 text-primary-500 mx-auto mb-4"></i>
+                        <h3 class="text-xl font-extrabold text-primary-900 mb-2" data-en="Our Office" data-ar="مكتبنا">Our Office</h3>
+                        <p class="text-gray-600 mb-2" data-en="Ajman Free Zone, Ajman, UAE" data-ar="منطقة عجمان الحرة، عجمان، الإمارات">Ajman Free Zone, Ajman, UAE</p>
+                        <a href="#" class="text-primary-500 font-medium hover:underline text-sm sm:text-base" data-en="Get Directions" data-ar="الحصول على الاتجاهات">Get Directions</a>
+                    </div>
+                </div>
+
+                <!-- Live Map Embed (Ajman Free Zone coordinates used) -->
+                <div class="mt-12 rounded-xl overflow-hidden shadow-2xl">
+                    <!-- Google Maps Embed for Ajman Free Zone (example coordinates) -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.91420790938!2d55.45427131501173!3d25.40576398379468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f58c70f0321a5%3A0x6b7a5a895f4e0474!2sAjman%20Free%20Zone!5e0!3m2!1sen!2sae!v1633512345678!5m2!1sen!2sae" 
+                        width="100%" 
+                        height="450" 
+                        class="map-iframe" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        aria-label="Google Map showing the location of Ajman Free Zone"
+                    ></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary-900 pt-10 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-b border-primary-500/20 pb-8 mb-6">
+                <!-- Column 1: Logo and Address -->
+                <div class="col-span-2 md:col-span-1 text-left-rtl">
+                    <div class="flex items-center space-x-2 rtl:space-x-reverse mb-4">
+                        <!-- ACTUAL LOGO IMAGE - يستخدم logo1.png في الفوتر بحجم قياسي w-36 h-12 -->
+                        <img src="logo1.png" alt="Faizan Logo" class="w-36 h-12 object-contain rounded-lg">
+                    </div>
+                    <p class="text-sm text-gray-300" 
+                        data-en="Ajman Free Zone, Ajman, UAE" 
+                        data-ar="منطقة عجمان الحرة، عجمان، الإمارات">
+                        Ajman Free Zone, Ajman, UAE
+                    </p>
+                    <a href="#" class="text-primary-500 text-sm hover:underline mt-2 inline-block" data-en="View Map" data-ar="عرض الخريطة">View Map</a>
+                </div>
+
+                <!-- Column 2: Quick Links (Updated: Removed Projects Portfolio) -->
+                <div class="text-left-rtl">
+                    <h4 class="text-lg font-extrabold text-primary-500 mb-3" data-en="Quick Links" data-ar="روابط سريعة">Quick Links</h4> <!-- Changed to extrabold -->
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="footer-link text-gray-300 transition-all duration-200 block" data-en="About Us" data-ar="من نحن">About Us</a></li>
+                        <li><a href="#services" class="footer-link text-gray-300 transition-all duration-200 block" data-en="Our Services" data-ar="خدماتنا">Our Services</a></li>
+                        <!-- Footer Link for Reviews -->
+                        <li><a href="#reviews" class="footer-link text-gray-300 transition-all duration-200 block" data-en="Reviews" data-ar="التقييمات">Reviews</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact Info -->
+                <div class="text-left-rtl">
+                    <h4 class="text-lg font-extrabold text-primary-500 mb-3" data-en="Contact Details" data-ar="تفاصيل الاتصال">Contact Details</h4> <!-- Changed to extrabold -->
+                    <ul class="space-y-3">
+                        <li class="flex items-center space-x-2 rtl:space-x-reverse">
+                            <i data-lucide="mail" class="w-4 h-4 text-primary-500 flex-shrink-0"></i>
+                            <a href="mailto:info@faizanbc.com" class="text-gray-300 hover:text-white text-sm break-all">info@faizanbc.com</a>
+                        </li>
+                        <li class="flex items-center space-x-2 rtl:space-x-reverse">
+                            <i data-lucide="phone" class="w-4 h-4 text-primary-500 flex-shrink-0"></i>
+                            <a href="tel:+97137620403" class="text-gray-300 hover:text-white text-sm">+971 3 762 0403</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Social Media / Newsletter (Placeholder) -->
+                <div class="text-left-rtl">
+                    <h4 class="text-lg font-extrabold text-primary-500 mb-3" data-en="Follow Us" data-ar="تابعنا">Follow Us</h4> <!-- Changed to extrabold -->
+                    <div class="flex space-x-4 rtl:space-x-reverse">
+                        <a href="#" title="Follow us on LinkedIn" class="text-gray-300 hover:text-primary-500 transition duration-150 p-2 border border-gray-700 rounded-full"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                        <a href="#" title="Follow us on Instagram" class="text-gray-300 hover:text-primary-500 transition duration-150 p-2 border border-gray-700 rounded-full"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                        <a href="#" title="Follow us on Facebook" class="text-gray-300 hover:text-primary-500 transition duration-150 p-2 border border-gray-700 rounded-full"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright Line -->
+            <div class="text-center pt-4">
+                <p class="text-xs text-gray-400" 
+                    data-en="&copy; 2024 Faizan Building Contracting LLC. All rights reserved." 
+                    data-ar="&copy; 2024 شركة فيضان للمقاولات الإنشائية ذ.م.م. جميع الحقوق محفوظة.">
+                    &copy; 2024 Faizan Building Contracting LLC. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

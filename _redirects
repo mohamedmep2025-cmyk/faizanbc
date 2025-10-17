@@ -1,0 +1,31 @@
+# Netlify redirects for SPA routing and domain canonicalization
+# This file enables clean URLs and prevents duplicate content issues
+
+# Domain canonicalization - Force HTTPS and WWW
+http://faizanbc.com/*           https://www.faizanbc.com/:splat     301!
+https://faizanbc.com/*          https://www.faizanbc.com/:splat     301!
+http://www.faizanbc.com/*       https://www.faizanbc.com/:splat     301!
+
+# Redirect old domain if it exists (update if you have old domain)
+# http://faizanbuilding.com/*     https://www.faizanbc.com/:splat     301!
+# https://faizanbuilding.com/*    https://www.faizanbc.com/:splat     301!
+# http://www.faizanbuilding.com/* https://www.faizanbc.com/:splat     301!
+# https://www.faizanbuilding.com/* https://www.faizanbc.com/:splat    301!
+
+# Redirect all section URLs to index.html (SPA routing)
+/about              /index.html   200
+/services           /index.html   200  
+/projects           /index.html   200
+/reviews            /index.html   200
+/contact            /index.html   200
+/portfolio          /index.html   200
+
+# Redirect old hash URLs to clean URLs (301 permanent redirect)
+/#about             /about        301
+/#services          /services     301
+/#projects          /projects     301
+/#reviews           /reviews      301
+/#contact           /contact      301
+
+# Fallback: any other path goes to homepage
+/*                  /index.html   200
